@@ -9,15 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TaoBao">
+
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".Welcome_Activity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name="com.example.taobao.MainActivity"
+            android:exported="true">
+        </activity>
+
+
+
     </application>
 
 </manifest>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/fragment_main_home"
+        android:icon="@drawable/uik_nav_btn1"
+        tools:ignore="MenuTitle" />
+    <item
+        android:id="@+id/fragment_main_around"
+        android:icon="@drawable/uik_nav_btn2"
+        tools:ignore="MenuTitle" />
+    <item
+        android:id="@+id/fragment_main_message"
+        android:icon="@drawable/uik_nav_btn3"
+        tools:ignore="MenuTitle" />
+    <item
+        android:id="@+id/fragment_main_shoppingcart"
+        android:icon="@drawable/uik_nav_btn4"
+        tools:ignore="MenuTitle" />
+    <item
+        android:id="@+id/fragment_main_mytaobao"
+        android:icon="@drawable/uik_nav_btn5"
+        tools:ignore="MenuTitle" />
+</menu>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragment_main_home">
+    <!--上面表示初始显示哪个Fragment-->
+    <!--淘宝首页-->
+    <fragment
+        android:id="@+id/fragment_main_home"
+        android:name="com.example.taobao.ui.Fragment.Fragment_main_home"
+        android:label="fragment1" />
+    <!--淘宝逛逛-->
+    <fragment
+        android:id="@+id/fragment_main_around"
+        android:name="com.example.taobao.ui.Fragment.Fragment_main_around"
+        android:label="fragment2"/>
+    <!--淘宝消息-->
+    <fragment
+        android:id="@+id/fragment_main_message"
+        android:name="com.example.taobao.ui.Fragment.Fragment_main_message"
+        android:label="fragment3"/>
+    <!--淘宝购物车-->
+    <fragment
+        android:id="@+id/fragment_main_shoppingcart"
+        android:name="com.example.taobao.ui.Fragment.Fragment_main_shoppingCart"
+        android:label="fragment4"/>
+    <!--淘宝我的淘宝-->
+    <fragment
+        android:id="@+id/fragment_main_mytaobao"
+        android:name="com.example.taobao.ui.Fragment.Fragment_main_MyTaobao"
+        android:label="fragment4"/>
+</navigation>
