@@ -23,9 +23,6 @@
             android:name="com.example.taobao.MainActivity"
             android:exported="true">
         </activity>
-
-
-
     </application>
 
 </manifest>

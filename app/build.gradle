@@ -39,6 +39,7 @@ dependencies {
     //1.导入了底部导航栏的依赖
     implementation 'androidx.navigation:navigation-fragment:2.5.3'
     implementation 'androidx.navigation:navigation-ui:2.5.3'
-
+    //2.RecyclerView
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
 
 }
