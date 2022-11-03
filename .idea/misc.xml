@@ -11,7 +11,7 @@
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/drawable-xxxhdpi/uik_nav_btn4.xml" value="0.2775" />
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/drawable-xxxhdpi/uik_nav_btn5.xml" value="0.2775" />
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/drawable/bar_around_avatar.xml" value="0.2775" />
-        <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/layout/activity_main.xml" value="0.4" />
+        <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/layout/activity_welcome.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/layout/fragment_around.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/layout/fragment_home.xml" value="0.36614583333333334" />
@@ -21,6 +21,7 @@
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/layout/fragment_main_shoppingcart.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/layout/fragment_message_scroll.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/layout/frgment_main_mytaobao.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/layout/layout_message_recyclerview.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/layout/layout_message_scroll.xml" value="0.4" />
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/menu/menu.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/menu/menu_item_selected.xml" value="0.36614583333333334" />

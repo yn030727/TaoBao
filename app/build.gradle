@@ -41,5 +41,7 @@ dependencies {
     implementation 'androidx.navigation:navigation-ui:2.5.3'
     //2.RecyclerView
     implementation 'androidx.recyclerview:recyclerview:1.2.1'
-
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    //3.第三方:圆形图片库
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
 }
