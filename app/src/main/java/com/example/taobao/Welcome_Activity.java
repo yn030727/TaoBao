@@ -21,7 +21,7 @@ public class Welcome_Activity extends AppCompatActivity {
         //1.设置全屏
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         //2.隐藏顶部标题栏
-        getSupportActionBar().hide();
+//        getSupportActionBar().hide();
         //调用发送信息延迟函数
         handler.sendEmptyMessageDelayed(0,1500);
     }

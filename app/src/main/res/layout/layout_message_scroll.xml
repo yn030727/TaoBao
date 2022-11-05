@@ -4,8 +4,8 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:background="#F4F4F4">
-
     <androidx.core.widget.NestedScrollView
+        android:id="@+id/main_message_nestedScrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scrollbars="vertical">
@@ -76,7 +76,8 @@
                 android:id="@+id/main_message_recyclerView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#fff"/>
+                android:background="#fff"
+                android:paddingBottom="200dp"/>
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 

@@ -28,5 +28,5 @@
     <fragment
         android:id="@+id/fragment_main_mytaobao"
         android:name="com.example.taobao.ui.Fragment.Fragment_main_MyTaobao"
-        android:label="fragment4"/>
+        android:label="fragment5"/>
 </navigation>

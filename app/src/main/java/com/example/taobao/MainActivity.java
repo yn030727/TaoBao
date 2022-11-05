@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //去除标题栏
-        this.getSupportActionBar().hide();
+//        this.getSupportActionBar().hide();
         //获取底部导航栏实例
         bottomNavigation =findViewById(R.id.bottom_navigation);
         //保留icon原图颜色

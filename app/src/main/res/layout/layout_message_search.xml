@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/main_message_searchbutton2"
+        android:layout_width="339dp"
+        android:layout_height="43dp"
+        android:background="@drawable/main_message_searchbutton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.007" />
+
+    <Button
+        android:id="@+id/main_message_search_back"
+        android:layout_width="33dp"
+        android:layout_height="40dp"
+        android:alpha="0.3"
+        android:background="@drawable/main_message_search_back"
+        app:layout_constraintBottom_toBottomOf="@+id/main_message_searchbutton2"
+        app:layout_constraintEnd_toStartOf="@+id/main_message_searchbutton2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/main_message_searchbutton2" />
+
+    <TextView
+        android:id="@+id/main_message_search_quxiao"
+        android:layout_width="37dp"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="#FF5622"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/main_message_searchbutton2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/main_message_searchbutton2"
+        app:layout_constraintTop_toTopOf="@+id/main_message_searchbutton2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/main_message_search_text1"
+        android:layout_width="137dp"
+        android:layout_height="26dp"
+        android:layout_marginBottom="636dp"
+        android:alpha="0.6"
+        android:text="搜索指定内容"
+        android:textColor="#000"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/main_message_search_text2"
+        android:layout_width="137dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:alpha="0.6"
+        android:text="历史搜索"
+        android:textColor="#000"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/main_message_search_text1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_message_search_text1"
+        app:layout_constraintVertical_bias="0.292" />
+
+    <Button
+        android:id="@+id/main_message_btn1"
+        android:layout_width="87dp"
+        android:layout_height="31dp"
+        android:alpha="0.4"
+        android:background="@drawable/uik_message_search_btn"
+        android:text="联系人"
+        android:textColor="#000"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.141"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_message_search_text1"
+        app:layout_constraintVertical_bias="0.047" />
+
+    <Button
+        android:id="@+id/main_message_btn2"
+        android:layout_width="87dp"
+        android:layout_height="31dp"
+        android:alpha="0.4"
+        android:background="@drawable/uik_message_search_btn"
+        android:text="消息号"
+        android:textColor="#000"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/main_message_btn1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.163"
+        app:layout_constraintStart_toEndOf="@+id/main_message_btn1"
+        app:layout_constraintTop_toTopOf="@+id/main_message_btn1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/main_message_btn3"
+        android:layout_width="87dp"
+        android:layout_height="31dp"
+        android:alpha="0.4"
+        android:background="@drawable/uik_message_search_btn"
+        android:text="群聊"
+        android:textColor="#000"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/main_message_btn2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toEndOf="@+id/main_message_btn2"
+        app:layout_constraintTop_toTopOf="@+id/main_message_btn2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/main_message_btn4"
+        android:layout_width="87dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:alpha="0.4"
+        android:background="@drawable/uik_message_search_btn"
+        android:text="店铺"
+        android:textColor="#000"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/main_message_btn1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/main_message_btn1"
+        app:layout_constraintTop_toBottomOf="@+id/main_message_btn1"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <Button
+        android:id="@+id/main_message_btn5"
+        android:layout_width="87dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:alpha="0.4"
+        android:background="@drawable/uik_message_search_btn"
+        android:text="聊天宝贝"
+        android:textColor="#000"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/main_message_btn2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/main_message_btn2"
+        app:layout_constraintTop_toBottomOf="@+id/main_message_btn2"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <Button
+        android:id="@+id/main_message_btn6"
+        android:layout_width="87dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:alpha="0.4"
+        android:background="@drawable/uik_message_search_btn"
+        android:text="聊天记录"
+        android:textColor="#000"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/main_message_btn3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/main_message_btn3"
+        app:layout_constraintTop_toBottomOf="@+id/main_message_btn3"
+        app:layout_constraintVertical_bias="0.058" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

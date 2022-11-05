@@ -1,9 +1,14 @@
 package com.example.taobao.ui.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.PopupWindow;
+
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -15,26 +20,74 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.taobao.R;
 import com.example.taobao.logic.main_message;
 import com.example.taobao.ui.message.MessageAdapter;
+import com.example.taobao.ui.message.MessageSearch_Activity;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Fragment_main_message extends Fragment {
-    List<main_message> mainMessageList;
-    RecyclerView recyclerView;
-    MessageAdapter messageAdapter;
+    private List<main_message> mainMessageList;
+    private RecyclerView recyclerView;
+    private MessageAdapter messageAdapter;
+    private Button button_search;
+    private Button button_add;
+/*    private int mDistanceY;
+    Toolbar mToolbar;*/
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view=inflater.inflate(R.layout.fragment_main_message,container,false);
         mainMessageList=new ArrayList<main_message>();
         initMessage();
+        //获取实例
         recyclerView=view.findViewById(R.id.main_message_recyclerView);
+        button_search=view.findViewById(R.id.main_message_searchbutton);
+        button_add=view.findViewById(R.id.bar_message_add);
+/*        mToolbar=view.findViewById(R.id.toolbar2);*/
+        //RecyclerView的基本操作
         LinearLayoutManager linearLayoutManager=new LinearLayoutManager(view.getContext());
         messageAdapter=new MessageAdapter(mainMessageList);
         recyclerView.setAdapter(messageAdapter);
         recyclerView.setLayoutManager(linearLayoutManager);
         recyclerView.addItemDecoration(new DividerItemDecoration(getContext(),LinearLayoutManager.VERTICAL));
+/*        //滑动达成ToolBar变色
+        recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
+            @Override
+            public void onScrolled(@NonNull RecyclerView recyclerView, int dx, int dy) {
+                super.onScrolled(recyclerView,dx,dy);
+                mDistanceY +=dy;
+                int toolbarHeight=mToolbar.getBottom();
+                if(mDistanceY<=toolbarHeight){
+                    float scale=(float)mDistanceY/toolbarHeight;
+                    float alpha=scale*255;
+                    mToolbar.setBackgroundColor(Color.argb((int)alpha,255,255,255));
+                }else{
+                    mToolbar.setBackgroundResource(R.color.white);
+                }
+            }
+        });*/
+        button_search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getActivity(), MessageSearch_Activity.class);
+                Log.d("Fragment_main_message","begin");
+                startActivity(intent);
+            }
+        });
+
+        //点击add按钮弹出PopupWindow窗口
+        button_add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //将布局文件加载到PopupWindow文件中
+                View popView=getLayoutInflater().inflate(R.layout.layout_message_add_popupwindow,null);
+                //new中间的两个参数是窗口的大小
+                PopupWindow popupWindow=new PopupWindow(popView,270,ViewGroup.LayoutParams.WRAP_CONTENT,true);
+                //表示相对于v控件(这里是按钮)的位置，负数是左和上，正数是右和下
+                popupWindow.showAsDropDown(v,-210,37);
+            }
+        });
+
         return view;
     }
 
@@ -57,9 +110,9 @@ public class Fragment_main_message extends Fragment {
         mainMessageList.add(new main_message(R.drawable.main_message_head_orange2girl,"洛洛科技店","需要吗亲","22/07/31"));
         mainMessageList.add(new main_message(R.drawable.main_message_head_orangegril,"倾城酷玩","亲 你好可以看看需要哪个套餐","22/07/24"));
         mainMessageList.add(new main_message(R.drawable.main_message_head_microsoft,"Microsoft系统商城","您24小时以内已评价过该客服啦","22/07/23"));
-        mainMessageList.add(new main_message(R.drawable.main_message_head_google,"Google公司3g分部","6","22/03/13"));
+        mainMessageList.add(new main_message(R.drawable.main_message_head_google,"Google公司3G分部","6","22/03/13"));
         mainMessageList.add(new main_message(R.drawable.main_message_head_zhangzy,"张泽宇","我当时是年级第一，我还喝了两瓶45度的朗姆酒","22/02/02"));
-        mainMessageList.add(new main_message(R.drawable.main_message_head_zhaixb,"翟旭博","长相是下限，人品是上线","22/01/31"));
+        mainMessageList.add(new main_message(R.drawable.main_message_head_zhaixb,"翟旭博","长相是下限，人品是上限","22/01/31"));
         mainMessageList.add(new main_message(R.drawable.main_message_head_fuzq,"傅梓棋","6","22/01/25"));
     }
 }
