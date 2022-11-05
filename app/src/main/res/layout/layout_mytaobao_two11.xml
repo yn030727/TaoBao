@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="125dp">
+<!--    显示的是我的淘宝页面的双11-->
+<!--    这里使用了一整个Button，后期如果还需要改可以分为四个button-->
+    <Button
+        android:id="@+id/main_mytaobao_two11"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_taobao_person_two11"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

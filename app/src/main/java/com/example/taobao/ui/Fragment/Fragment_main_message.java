@@ -18,6 +18,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.taobao.R;
+import com.example.taobao.Unfinish_Activity;
 import com.example.taobao.logic.main_message;
 import com.example.taobao.ui.message.MessageAdapter;
 import com.example.taobao.ui.message.MessageSearch_Activity;
@@ -25,7 +26,7 @@ import com.example.taobao.ui.message.MessageSearch_Activity;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Fragment_main_message extends Fragment {
+public class Fragment_main_message extends Fragment implements View.OnClickListener {
     private List<main_message> mainMessageList;
     private RecyclerView recyclerView;
     private MessageAdapter messageAdapter;
@@ -43,6 +44,11 @@ public class Fragment_main_message extends Fragment {
         recyclerView=view.findViewById(R.id.main_message_recyclerView);
         button_search=view.findViewById(R.id.main_message_searchbutton);
         button_add=view.findViewById(R.id.bar_message_add);
+        Button btn2=view.findViewById(R.id.bar_message_contact);
+        Button btn3=view.findViewById(R.id.main_message_bell);
+        Button btn4=view.findViewById(R.id.main_message_aite);
+        Button btn5=view.findViewById(R.id.main_message_redbox);
+        Button btn6=view.findViewById(R.id.main_message_coupon);
 /*        mToolbar=view.findViewById(R.id.toolbar2);*/
         //RecyclerView的基本操作
         LinearLayoutManager linearLayoutManager=new LinearLayoutManager(view.getContext());
@@ -66,7 +72,7 @@ public class Fragment_main_message extends Fragment {
                 }
             }
         });*/
-        button_search.setOnClickListener(new View.OnClickListener() {
+/*        button_search.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(getActivity(), MessageSearch_Activity.class);
@@ -86,7 +92,14 @@ public class Fragment_main_message extends Fragment {
                 //表示相对于v控件(这里是按钮)的位置，负数是左和上，正数是右和下
                 popupWindow.showAsDropDown(v,-210,37);
             }
-        });
+        });*/
+        button_add.setOnClickListener(this);
+        button_search.setOnClickListener(this);
+        btn2.setOnClickListener(this);
+        btn3.setOnClickListener(this);
+        btn4.setOnClickListener(this);
+        btn5.setOnClickListener(this);
+        btn6.setOnClickListener(this);
 
         return view;
     }
@@ -114,5 +127,31 @@ public class Fragment_main_message extends Fragment {
         mainMessageList.add(new main_message(R.drawable.main_message_head_zhangzy,"张泽宇","我当时是年级第一，我还喝了两瓶45度的朗姆酒","22/02/02"));
         mainMessageList.add(new main_message(R.drawable.main_message_head_zhaixb,"翟旭博","长相是下限，人品是上限","22/01/31"));
         mainMessageList.add(new main_message(R.drawable.main_message_head_fuzq,"傅梓棋","6","22/01/25"));
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.main_message_searchbutton:{
+                Intent intent=new Intent(getActivity(), MessageSearch_Activity.class);
+                Log.d("Fragment_main_message","begin");
+                startActivity(intent);
+                break;
+            }
+            case R.id.bar_message_add:{
+                //将布局文件加载到PopupWindow文件中
+                View popView=getLayoutInflater().inflate(R.layout.layout_message_add_popupwindow,null);
+                //new中间的两个参数是窗口的大小
+                PopupWindow popupWindow=new PopupWindow(popView,270,ViewGroup.LayoutParams.WRAP_CONTENT,true);
+                //表示相对于v控件(这里是按钮)的位置，负数是左和上，正数是右和下
+                popupWindow.showAsDropDown(v,-210,37);
+                break;
+            }
+            default:{
+                Intent intent=new Intent(getActivity(), Unfinish_Activity.class);
+                startActivity(intent);
+                break;
+            }
+        }
     }
 }
