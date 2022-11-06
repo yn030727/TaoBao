@@ -6,6 +6,7 @@
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1955" />
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/drawable-xxxhdpi/main_message_add_popupwindow.xml" value="0.1165" />
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/drawable-xxxhdpi/main_message_supplementabox.xml" value="0.2775" />
+        <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/drawable-xxxhdpi/main_taobao_zeromoney_chong.xml" value="0.1" />
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/drawable-xxxhdpi/taobao_layout.xml" value="0.3005" />
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/drawable-xxxhdpi/uik_message_search_btn.xml" value="0.1" />
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/drawable-xxxhdpi/uik_nav_btn1.xml" value="0.2775" />
@@ -37,6 +38,10 @@
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/layout/layout_mytaobao_scroll.xml" value="0.25" />
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/layout/layout_mytaobao_settings.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/layout/layout_mytaobao_two11.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/layout/layout_taobao_functionrecycler.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/layout/layout_taobao_recyclerview.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/layout/layout_taobao_videopager.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/layout/layout_taobao_zeromoney.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/menu/menu.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/menu/menu_item_selected.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/menu/menu_message.xml" value="0.36614583333333334" />

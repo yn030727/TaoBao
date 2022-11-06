@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="@drawable/taobao_layout" >
+
+    <TextView
+        android:id="@+id/main_taobao_zeromoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="零钱"
+        android:textColor="#000"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="余额:￥0.00"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="@+id/main_taobao_zeromoney"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.037"
+        app:layout_constraintStart_toEndOf="@+id/main_taobao_zeromoney"
+        app:layout_constraintTop_toTopOf="@+id/main_taobao_zeromoney"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/main_taobao_zeromoney_chong"
+        android:layout_width="68dp"
+        android:layout_height="31dp"
+        android:text="去充值"
+        android:textColor="#ff7400"
+        android:textSize="13dp"
+        android:background="@drawable/main_taobao_zeromoney_chong"
+        app:layout_constraintBottom_toBottomOf="@+id/textView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.926"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0.461" />
+</androidx.constraintlayout.widget.ConstraintLayout>

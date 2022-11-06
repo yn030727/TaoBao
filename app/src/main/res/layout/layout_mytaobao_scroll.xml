@@ -3,14 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_marginBottom="70dp">
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        android:overScrollMode="never">
         <!--        滚动控件内的一层层布局-->
         <LinearLayout
             android:layout_width="match_parent"
@@ -41,6 +43,20 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="6dp"
                 />
+            <include
+                layout="@layout/layout_taobao_zeromoney"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="6dp"/>
+            <include
+                layout="@layout/layout_taobao_functionrecycler"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="6dp"/>
 
         </LinearLayout>
 

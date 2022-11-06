@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@drawable/taobao_layout">
+    <!--    设置成两行的左右滚动布局-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/main_taobao_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:overScrollMode="never"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
