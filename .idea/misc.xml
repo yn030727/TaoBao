@@ -6,8 +6,10 @@
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1955" />
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/drawable-xxxhdpi/main_message_add_popupwindow.xml" value="0.1165" />
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/drawable-xxxhdpi/main_message_supplementabox.xml" value="0.2775" />
+        <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/drawable-xxxhdpi/main_taobao_person_edit.xml" value="0.3105" />
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/drawable-xxxhdpi/main_taobao_zeromoney_chong.xml" value="0.1" />
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/drawable-xxxhdpi/taobao_layout.xml" value="0.3005" />
+        <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/drawable-xxxhdpi/taobao_layout_grey.xml" value="0.3105" />
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/drawable-xxxhdpi/uik_message_search_btn.xml" value="0.1" />
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/drawable-xxxhdpi/uik_nav_btn1.xml" value="0.2775" />
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/drawable-xxxhdpi/uik_nav_btn2.xml" value="0.2775" />
@@ -19,6 +21,10 @@
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/drawable/bar_around_avatar.xml" value="0.2775" />
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/layout/activity_message_search.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/layout/activity_taobao_back_money.xml" value="0.3515625" />
+        <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/layout/activity_taobao_no_money.xml" value="0.5" />
+        <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/layout/activity_taobao_orders.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/layout/activity_taobao_person.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/layout/activity_unfinish.xml" value="0.3632246376811594" />
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/layout/activity_welcome.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/layout/fragment_around.xml" value="0.36614583333333334" />

@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Switch;
 import android.widget.TextView;
@@ -21,6 +22,9 @@ import com.example.taobao.R;
 import com.example.taobao.Unfinish_Activity;
 import com.example.taobao.logic.main_taobao_function;
 import com.example.taobao.ui.MyTaoBao.TaobaoAdapter;
+import com.example.taobao.ui.MyTaoBao.TaobaoBackMoney_Activity;
+import com.example.taobao.ui.MyTaoBao.TaobaoNoMoney_Activity;
+import com.example.taobao.ui.MyTaoBao.TaobaoPerson_Activity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,9 +37,15 @@ public class Fragment_main_MyTaobao extends Fragment implements View.OnClickList
     private Button taoyouquan;
     private Button cardView1;
     private Button two11;
+    private ImageView waitMoney;
+    private ImageView fahuo;
+    private ImageView shouhuo;
+    private  ImageView pingjia;
+    private ImageView tuikuan;
     private RecyclerView recyclerView;
     private List<main_taobao_function> functionList;
     private TaobaoAdapter taobaoAdapter;
+    private Button quchongzhi;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -48,12 +58,24 @@ public class Fragment_main_MyTaobao extends Fragment implements View.OnClickList
         cardView1 = view.findViewById(R.id.main_mytaobao_cardview1);//一号卡片布局(会员中心，淘宝省钱卡，淘宝人生，红包签到)
         two11= view.findViewById(R.id.main_mytaobao_two11);//天猫双11
         recyclerView=view.findViewById(R.id.main_taobao_recyclerview);
+        waitMoney=view.findViewById(R.id.imageView4);
+        fahuo=view.findViewById(R.id.imageView5);
+        shouhuo=view.findViewById(R.id.imageView6);
+        pingjia=view.findViewById(R.id.imageView7);
+        tuikuan=view.findViewById(R.id.imageView8);
+        quchongzhi=view.findViewById(R.id.main_taobao_zeromoney_chong);
         //按钮点击
         ImageViewbtn.setOnClickListener(this);
         editSaying.setOnClickListener(this);
         taoyouquan.setOnClickListener(this);
         cardView1.setOnClickListener(this);
         two11.setOnClickListener(this);
+        waitMoney.setOnClickListener(this);
+        fahuo.setOnClickListener(this);
+        shouhuo.setOnClickListener(this);
+        pingjia.setOnClickListener(this);
+        tuikuan.setOnClickListener(this);
+        quchongzhi.setOnClickListener(this);
 
 
         //加载RecyclerView
@@ -90,25 +112,29 @@ public class Fragment_main_MyTaobao extends Fragment implements View.OnClickList
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.circleImageView:{
+            case R.id.circleImageView:
+            case R.id.main_taobao_textView2: {
                 //个人主页
-            }
-            case R.id.main_taobao_textView2:{
-                //个性签名
-            }
-            case R.id.main_taobao_person_friend:{
+                Intent intent=new Intent(getActivity(), TaobaoPerson_Activity.class);
+                startActivity(intent);
+                break;
+            }//个性签名
+            case R.id.main_taobao_person_friend:
+            case R.id.main_mytaobao_cardview1:
+            case R.id.main_mytaobao_two11: {
                 Intent intent=new Intent(getActivity(), Unfinish_Activity.class);
                 startActivity(intent);
                 break;
             }
-            case R.id.main_mytaobao_cardview1:{
-                Intent intent=new Intent(getActivity(), Unfinish_Activity.class);
+            case R.id.imageView8:{
+                Intent intent=new Intent(getActivity(), TaobaoBackMoney_Activity.class);
                 startActivity(intent);
                 break;
             }
-            case R.id.main_mytaobao_two11:{
-                Intent intent=new Intent(getActivity(),Unfinish_Activity.class);
+            case R.id.main_taobao_zeromoney_chong:{
+                Intent intent=new Intent(getActivity(), TaobaoNoMoney_Activity.class);
                 startActivity(intent);
+                break;
             }
             default:{
 
