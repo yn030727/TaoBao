@@ -181,10 +181,10 @@
             android:text="颜色分类:香港"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.355"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView18"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.419" />
+            app:layout_constraintVertical_bias="0.413" />
 
         <TextView
             android:id="@+id/textView20"
@@ -194,10 +194,10 @@
             android:textColor="#000"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.339"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.502" />
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView19"
+            app:layout_constraintTop_toTopOf="@+id/textView19"
+            app:layout_constraintVertical_bias="0.153" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout"
@@ -233,7 +233,7 @@
                 android:textColor="#000"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.202"
+                app:layout_constraintHorizontal_bias="0.224"
                 app:layout_constraintStart_toEndOf="@+id/textView21"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.526" />
