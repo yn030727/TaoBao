@@ -6,6 +6,7 @@
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1955" />
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/drawable-xxxhdpi/main_message_add_popupwindow.xml" value="0.1165" />
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/drawable-xxxhdpi/main_message_supplementabox.xml" value="0.2775" />
+        <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/drawable-xxxhdpi/main_taobao_order_btn.xml" value="0.3105" />
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/drawable-xxxhdpi/main_taobao_person_edit.xml" value="0.3105" />
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/drawable-xxxhdpi/main_taobao_zeromoney_chong.xml" value="0.1" />
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/drawable-xxxhdpi/taobao_layout.xml" value="0.3005" />
@@ -16,6 +17,8 @@
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/drawable-xxxhdpi/uik_nav_btn3.xml" value="0.2775" />
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/drawable-xxxhdpi/uik_nav_btn4.xml" value="0.2775" />
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/drawable-xxxhdpi/uik_nav_btn5.xml" value="0.2775" />
+        <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/drawable-xxxhdpi/uik_order_btn1.xml" value="0.3105" />
+        <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/drawable-xxxhdpi/uik_order_btn_text.xml" value="0.3105" />
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/drawable-xxxhdpi/uik_taobao_taoyouquan.xml" value="0.2815" />
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/drawable-xxxhdpi/uik_taobao_taoyouquan2.xml" value="0.2815" />
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/drawable/bar_around_avatar.xml" value="0.2775" />
@@ -39,11 +42,14 @@
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/layout/layout_message_recyclerview.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/layout/layout_message_scroll.xml" value="0.4" />
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/layout/layout_message_search.xml" value="0.35054347826086957" />
-        <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/layout/layout_mytaobao_cardview1.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/layout/layout_mytaobao_cardview1.xml" value="0.5" />
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/layout/layout_mytaobao_person.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/layout/layout_mytaobao_scroll.xml" value="0.25" />
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/layout/layout_mytaobao_settings.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/layout/layout_mytaobao_two11.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/layout/layout_taobao_addpingdao.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/layout/layout_taobao_carousel.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/layout/layout_taobao_extramodules.xml" value="0.3619791666666667" />
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/layout/layout_taobao_functionrecycler.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/layout/layout_taobao_recyclerview.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/MKSY/AndroidStudioProjects/TaoBao/app/src/main/res/layout/layout_taobao_videopager.xml" value="0.36614583333333334" />

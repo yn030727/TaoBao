@@ -24,6 +24,7 @@ import com.example.taobao.logic.main_taobao_function;
 import com.example.taobao.ui.MyTaoBao.TaobaoAdapter;
 import com.example.taobao.ui.MyTaoBao.TaobaoBackMoney_Activity;
 import com.example.taobao.ui.MyTaoBao.TaobaoNoMoney_Activity;
+import com.example.taobao.ui.MyTaoBao.TaobaoOrders_Activity;
 import com.example.taobao.ui.MyTaoBao.TaobaoPerson_Activity;
 
 import java.util.ArrayList;
@@ -40,7 +41,7 @@ public class Fragment_main_MyTaobao extends Fragment implements View.OnClickList
     private ImageView waitMoney;
     private ImageView fahuo;
     private ImageView shouhuo;
-    private  ImageView pingjia;
+    private ImageView pingjia;
     private ImageView tuikuan;
     private RecyclerView recyclerView;
     private List<main_taobao_function> functionList;
@@ -55,7 +56,6 @@ public class Fragment_main_MyTaobao extends Fragment implements View.OnClickList
         ImageViewbtn =view.findViewById(R.id.circleImageView);//个人头像
         editSaying = view.findViewById(R.id.main_taobao_textView2);//个人签名
         taoyouquan = view.findViewById(R.id.main_taobao_person_friend);//淘友圈
-        cardView1 = view.findViewById(R.id.main_mytaobao_cardview1);//一号卡片布局(会员中心，淘宝省钱卡，淘宝人生，红包签到)
         two11= view.findViewById(R.id.main_mytaobao_two11);//天猫双11
         recyclerView=view.findViewById(R.id.main_taobao_recyclerview);
         waitMoney=view.findViewById(R.id.imageView4);
@@ -68,7 +68,6 @@ public class Fragment_main_MyTaobao extends Fragment implements View.OnClickList
         ImageViewbtn.setOnClickListener(this);
         editSaying.setOnClickListener(this);
         taoyouquan.setOnClickListener(this);
-        cardView1.setOnClickListener(this);
         two11.setOnClickListener(this);
         waitMoney.setOnClickListener(this);
         fahuo.setOnClickListener(this);
@@ -119,13 +118,6 @@ public class Fragment_main_MyTaobao extends Fragment implements View.OnClickList
                 startActivity(intent);
                 break;
             }//个性签名
-            case R.id.main_taobao_person_friend:
-            case R.id.main_mytaobao_cardview1:
-            case R.id.main_mytaobao_two11: {
-                Intent intent=new Intent(getActivity(), Unfinish_Activity.class);
-                startActivity(intent);
-                break;
-            }
             case R.id.imageView8:{
                 Intent intent=new Intent(getActivity(), TaobaoBackMoney_Activity.class);
                 startActivity(intent);
@@ -136,8 +128,18 @@ public class Fragment_main_MyTaobao extends Fragment implements View.OnClickList
                 startActivity(intent);
                 break;
             }
+            case R.id.imageView4:
+            case R.id.imageView5:
+            case R.id.imageView6:
+            case R.id.imageView7:{
+                Intent intent=new Intent(getActivity(), TaobaoOrders_Activity.class);
+                startActivity(intent);
+                break;
+            }
             default:{
-
+                Intent intent=new Intent(getActivity(), Unfinish_Activity.class);
+                startActivity(intent);
+                break;
             }
         }
     }

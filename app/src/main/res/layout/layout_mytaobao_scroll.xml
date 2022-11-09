@@ -57,7 +57,27 @@
                 android:layout_marginLeft="6dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="6dp"/>
-
+            <include
+                layout="@layout/layout_taobao_carousel"
+                android:layout_width="match_parent"
+                android:layout_height="105dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="6dp"/>
+            <include
+                layout="@layout/layout_taobao_addpingdao"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="6dp"/>
+            <include
+                layout="@layout/layout_taobao_extramodules"
+                android:layout_width="match_parent"
+                android:layout_height="580dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="6dp"/>
         </LinearLayout>
 
 

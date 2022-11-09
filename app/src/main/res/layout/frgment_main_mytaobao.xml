@@ -15,4 +15,5 @@
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme" />
     <include layout="@layout/layout_mytaobao_scroll" />
+
 </LinearLayout>
