@@ -13,7 +13,29 @@
         android:layout_height="wrap_content"
         android:background="#fff"
         android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme" />
+        android:theme="?attr/actionBarTheme">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Your Name"
+            android:textColor="#000"
+            android:textSize="18.5dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="10dp"
+            android:text="设置"
+            android:autoLink="all"
+            android:textColor="#000"
+            android:textSize="18.5dp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
     <include layout="@layout/layout_mytaobao_scroll" />
 
 </LinearLayout>

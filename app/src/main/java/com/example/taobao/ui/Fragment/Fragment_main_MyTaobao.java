@@ -20,12 +20,16 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.taobao.R;
 import com.example.taobao.Unfinish_Activity;
+import com.example.taobao.logic.ImageBean;
 import com.example.taobao.logic.main_taobao_function;
+import com.example.taobao.ui.MyTaoBao.ImageAdapter;
 import com.example.taobao.ui.MyTaoBao.TaobaoAdapter;
 import com.example.taobao.ui.MyTaoBao.TaobaoBackMoney_Activity;
 import com.example.taobao.ui.MyTaoBao.TaobaoNoMoney_Activity;
 import com.example.taobao.ui.MyTaoBao.TaobaoOrders_Activity;
 import com.example.taobao.ui.MyTaoBao.TaobaoPerson_Activity;
+import com.youth.banner.Banner;
+import com.youth.banner.indicator.CircleIndicator;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -47,6 +51,8 @@ public class Fragment_main_MyTaobao extends Fragment implements View.OnClickList
     private List<main_taobao_function> functionList;
     private TaobaoAdapter taobaoAdapter;
     private Button quchongzhi;
+    private Banner banner;
+    private List<ImageBean> beanList;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -64,6 +70,7 @@ public class Fragment_main_MyTaobao extends Fragment implements View.OnClickList
         pingjia=view.findViewById(R.id.imageView7);
         tuikuan=view.findViewById(R.id.imageView8);
         quchongzhi=view.findViewById(R.id.main_taobao_zeromoney_chong);
+        banner = view.findViewById(R.id.main_taobao_banner);//轮播图实例
         //按钮点击
         ImageViewbtn.setOnClickListener(this);
         editSaying.setOnClickListener(this);
@@ -86,8 +93,15 @@ public class Fragment_main_MyTaobao extends Fragment implements View.OnClickList
         recyclerView.setAdapter(taobaoAdapter);
         recyclerView.setLayoutManager(layoutManager);
 
+        //加载轮播图
+        beanList =new ArrayList<>();
+        initdata();
+        banner.setAdapter(new ImageAdapter(getActivity(),beanList));
+        banner.isAutoLoop(true);//是否轮播，默认为true
+        banner.setIndicator(new CircleIndicator(getActivity()));//设置小圆点
+        banner.start();
 
-    return view;
+        return view;
     }
     //将我的淘宝页面的滚动功能界面的集合进行初始化
     public void inittaobao() {
@@ -107,6 +121,12 @@ public class Fragment_main_MyTaobao extends Fragment implements View.OnClickList
         functionList.add(new main_taobao_function(R.drawable.main_taobao_recycler_shiyong, "使用领取"));
         functionList.add(new main_taobao_function(R.drawable.main_taobao_recycler_kefu, "官方客服"));
         functionList.add(new main_taobao_function(R.drawable.main_taobao_recycler_more, "更多"));
+    }
+    //将我的淘宝的轮播图界面集合进行初始化
+    public void initdata(){
+        beanList.add(new ImageBean(R.drawable.main_taobao_first_image));
+        beanList.add(new ImageBean(R.drawable.main_taobao_second_image));
+        beanList.add(new ImageBean(R.drawable.main_taobao_third_image));
     }
     @Override
     public void onClick(View v) {
