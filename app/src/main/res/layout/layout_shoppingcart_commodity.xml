@@ -23,14 +23,16 @@
 
     <Button
         android:id="@+id/button7"
-        android:layout_width="15dp"
-        android:layout_height="14dp"
+        android:layout_width="19dp"
+        android:layout_height="20dp"
         android:layout_marginEnd="216dp"
         android:background="@drawable/main_taobao_person_right"
         app:layout_constraintBottom_toBottomOf="@+id/main_shoppingcart_dianpuname"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/main_shoppingcart_dianpuname"
-        app:layout_constraintTop_toTopOf="@+id/main_shoppingcart_dianpuname" />
+        app:layout_constraintTop_toTopOf="@+id/main_shoppingcart_dianpuname"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/main_shoppingcart_dianpuimage"
@@ -70,23 +72,22 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:background="@drawable/taobao_layout_grey"
+        android:background="@drawable/taobao_layout"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.196"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.733">
+
         <ImageView
             android:id="@+id/main_shoppingcart_image"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -96,6 +97,7 @@
         android:layout_height="wrap_content"
         android:text="锌铝合金机械键盘透光"
         android:textColor="#000"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.93"
@@ -117,12 +119,13 @@
 
     <TextView
         android:id="@+id/main_shoppingcart_description"
-        android:layout_width="216dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#f9f9f9"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.917"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView40"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.582"
         tools:text="无;【透光】 STEAM*1个;" />
@@ -154,10 +157,10 @@
         android:textSize="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.691" />
+        app:layout_constraintVertical_bias="0.726" />
 
     <TextView
         android:id="@+id/textView41"
@@ -181,12 +184,12 @@
         android:textColor="#ff5d04"
         android:textSize="17dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/textView41"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.842"
+        app:layout_constraintTop_toTopOf="@+id/textView41"
+        app:layout_constraintVertical_bias="0.878"
         tools:text="73" />
 
     <Button
@@ -213,4 +216,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.231" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="凑单>"
+        android:textColor="#ff5d04"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.238" />
 </androidx.constraintlayout.widget.ConstraintLayout>

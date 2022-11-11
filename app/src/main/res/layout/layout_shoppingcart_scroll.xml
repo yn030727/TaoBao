@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f4f4f4">
+    android:background="#f4f4f4"
+    android:layout_marginBottom="90dp">
 
     <androidx.core.widget.NestedScrollView
         android:id="@+id/nestedScrollView"
@@ -31,13 +32,15 @@
                 android:layout_height="50dp" />
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/main_shoppingcart_recyclerview"
-                android:layout_width="409dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/nestedScrollView"
+                android:overScrollMode="never"
                 app:layout_constraintVertical_bias="0.0" />
         </LinearLayout>
 
