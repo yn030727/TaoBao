@@ -48,4 +48,6 @@ dependencies {
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
     //5.实现轮播图
     implementation 'io.github.youth5201314:banner:2.2.2'
+    //6.实现ViewPager2
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
 }

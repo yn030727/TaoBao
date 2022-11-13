@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/main_around_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#f4f4f4"
+        android:fitsSystemWindows="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/main_around_toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll">
+            <ImageView
+                android:id="@+id/main_around_search"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/main_around_search"
+                app:layout_collapseMode="parallax"/>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+        <LinearLayout
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/main_around_tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                app:tabIndicatorColor="#000"
+                app:layout_anchor="@+id/main_around_app_bar"
+                app:layout_anchorGravity="center"
+                app:tabMode="scrollable"
+                app:tabTextColor="#111111"
+                app:tabSelectedTextColor="#000"
+                app:tabBackground="@null"
+                app:tabRippleColor="@null" />
+        </LinearLayout>
+<!--        倒数3,4是tablayout选中和不选中的颜色
+        最后两个是取消tab点击的波纹动画效果-->
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <!--需要悬停的控件,这里选择Tablayout，悬停在toolbar底下-->
+    <!--底下是NestedScrollView用来滑动里面的内容-->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:fillViewport="true">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_around_viewpager2"/>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
