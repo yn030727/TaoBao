@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#f7f7f7">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -41,6 +42,7 @@
         app:layout_constraintVertical_bias="0.526"
         app:shapeAppearanceOverlay="@style/roundedCornerImagestyle" />
 
+
     <include
         layout="@layout/layout_around_suspension"
         android:layout_width="match_parent"
@@ -49,6 +51,24 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/main_around_tablayout2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="56dp"
+        app:layout_anchorGravity="center"
+        android:visibility="gone"
+        android:background="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tabBackground="@null"
+        app:tabIndicatorColor="#000"
+        app:tabMode="scrollable"
+        app:tabRippleColor="@null"
+        app:tabSelectedTextColor="#000"
+        app:tabTextColor="#111111" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

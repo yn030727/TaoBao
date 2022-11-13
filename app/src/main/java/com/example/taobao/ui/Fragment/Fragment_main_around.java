@@ -5,9 +5,11 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.core.widget.NestedScrollView;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager2.widget.ViewPager2;
 
@@ -32,11 +34,14 @@ public class Fragment_main_around extends Fragment {
     private ArrayList<String> titles;
     private TabLayout tabLayout;
     private ViewPager2 viewPager2;
+    private NestedScrollView nestedScrollView;
+    private TabLayout tabLayout2;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view=inflater.inflate(R.layout.fragment_main_around,container,false);
         viewPager2 =view.findViewById(R.id.main_around_viewpager2);
+        tabLayout2=view.findViewById(R.id.main_around_tablayout2);
         tabLayout=view.findViewById(R.id.main_around_tablayout);
         init();
         //fragmentActivityWrong？？ 加载适配器
@@ -48,6 +53,13 @@ public class Fragment_main_around extends Fragment {
             @Override
             public void onConfigureTab(@NonNull TabLayout.Tab tab, int position) {
                 Log.d("main_around_tablayout",""+titles.get(position));
+                tab.setText(titles.get(position));
+            }
+        }).attach();
+        new TabLayoutMediator(tabLayout2, viewPager2, new TabLayoutMediator.TabConfigurationStrategy() {
+            @Override
+            public void onConfigureTab(@NonNull TabLayout.Tab tab, int position) {
+                Log.d("main_around_tablayout2",""+titles.get(position));
                 tab.setText(titles.get(position));
             }
         }).attach();
@@ -67,7 +79,24 @@ public class Fragment_main_around extends Fragment {
                 super.onPageScrollStateChanged(state);
             }
         });
-
+        //写对于NestedScrollView的滚动响应事件
+        //对于上滑悬浮栏置顶事件，我们可以通过创建两个悬浮栏，隐藏其中一个
+        //然后判断整个NestedScrollView滑动的距离，到达一定距离后就可以把隐藏的悬浮栏显示出来。
+        nestedScrollView=view.findViewById(R.id.main_around_nestedscrollview);
+        //划过一个LinearLayout的距离，就显示
+        LinearLayout linearLayout=view.findViewById(R.id.main_around_image_layout);
+        nestedScrollView.setOnScrollChangeListener(new NestedScrollView.OnScrollChangeListener() {
+            @Override
+            public void onScrollChange(@NonNull NestedScrollView v, int scrollX, int scrollY, int oldScrollX, int oldScrollY) {
+                if(scrollY>linearLayout.getHeight()){
+                    //显示
+                    view.findViewById(R.id.main_around_tablayout2).setVisibility(View.VISIBLE);
+                }else{
+                    //隐藏
+                    view.findViewById(R.id.main_around_tablayout2).setVisibility(View.GONE);
+                }
+            }
+        });
         return view;
     }
 
