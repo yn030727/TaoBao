@@ -67,7 +67,8 @@
         app:tabMode="scrollable"
         app:tabRippleColor="@null"
         app:tabSelectedTextColor="#000"
-        app:tabTextColor="#111111" />
+        app:tabTextColor="#111111"
+        android:overScrollMode="never"/>
 
 
 

@@ -6,10 +6,11 @@
     android:background="#fff"
     android:layout_height="match_parent">
 
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
+        android:overScrollMode="never"
+        android:id="@+id/main_around_recyclerview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/test_message"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

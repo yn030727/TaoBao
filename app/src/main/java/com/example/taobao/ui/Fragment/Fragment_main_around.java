@@ -11,9 +11,15 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.widget.NestedScrollView;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager2.widget.ViewPager2;
 
+import com.example.taobao.MainActivity;
 import com.example.taobao.R;
+import com.example.taobao.logic.main_around;
+import com.example.taobao.ui.Around.AroundAdapter;
 import com.example.taobao.ui.Around.AroundAll_Fragment;
 import com.example.taobao.ui.Around.AroundDelicacies_Fragment;
 import com.example.taobao.ui.Around.AroundFragmentStateAdapter;
@@ -97,6 +103,7 @@ public class Fragment_main_around extends Fragment {
                 }
             }
         });
+
         return view;
     }
 
@@ -121,7 +128,5 @@ public class Fragment_main_around extends Fragment {
         titles.add("美食");
         titles.add("母婴");
         titles.add("护肤");
-
-
     }
 }
