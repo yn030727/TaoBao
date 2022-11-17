@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     tools:context=".ui.MyTaoBao.TaobaoBackMoney_Activity">
 
     <androidx.appcompat.widget.Toolbar
@@ -13,6 +14,7 @@
         android:background="#fff"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
+        android:fitsSystemWindows="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,6 +26,7 @@
         android:layout_width="38dp"
         android:layout_height="43dp"
         android:background="@drawable/main_message_search_back"
+        android:fitsSystemWindows="true"
         app:layout_constraintBottom_toBottomOf="@+id/toolbar4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.002"
@@ -40,6 +43,7 @@
         android:gravity="center"
         android:textSize="20dp"
         android:textStyle="bold"
+        android:fitsSystemWindows="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.452"
@@ -52,6 +56,7 @@
         android:layout_width="30dp"
         android:layout_height="35dp"
         android:layout_marginTop="4dp"
+        android:fitsSystemWindows="true"
         app:layout_constraintBottom_toBottomOf="@+id/toolbar4"
         app:layout_constraintEnd_toEndOf="@+id/toolbar4"
         app:layout_constraintHorizontal_bias="0.705"
@@ -64,6 +69,7 @@
         android:id="@+id/imageView13"
         android:layout_width="32dp"
         android:layout_height="35dp"
+        android:fitsSystemWindows="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.916"

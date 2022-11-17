@@ -186,10 +186,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/textView41"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.015"
+        app:layout_constraintStart_toEndOf="@+id/textView41"
         app:layout_constraintTop_toTopOf="@+id/textView41"
-        app:layout_constraintVertical_bias="0.878"
+        app:layout_constraintVertical_bias="1.0"
         tools:text="73" />
 
     <Button

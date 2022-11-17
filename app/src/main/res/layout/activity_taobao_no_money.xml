@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#c3d3eb"
+    android:fitsSystemWindows="true"
     tools:context=".ui.MyTaoBao.TaobaoNoMoney_Activity">
 
 
@@ -12,6 +13,7 @@
         android:id="@+id/imageView20"
         android:layout_width="598dp"
         android:layout_height="1170dp"
+        android:fitsSystemWindows="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
@@ -21,6 +23,7 @@
         app:srcCompat="@drawable/main_taobao_nomoney3" />
 
     <Button
+        android:fitsSystemWindows="true"
         android:id="@+id/button_back"
         android:layout_width="50dp"
         android:layout_height="53dp"
