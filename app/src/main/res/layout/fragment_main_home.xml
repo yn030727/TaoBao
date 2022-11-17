@@ -1,6 +1,146 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#f7f7f7">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar6"
+        android:layout_width="408dp"
+        android:layout_height="90dp"
+        android:background="#f7f7f7"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.001" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="41dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="16dp"
+        android:text="订阅"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar6"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar6"
+        app:layout_constraintHorizontal_bias="0.393"
+        app:layout_constraintStart_toStartOf="@+id/toolbar6"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="20dp"
+        android:text="推荐"
+        android:textColor="#000"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView38"
+        app:layout_constraintStart_toEndOf="@+id/textView38"
+        app:layout_constraintTop_toTopOf="@+id/textView38"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <ImageView
+        android:id="@+id/imageView27"
+        android:layout_width="78dp"
+        android:layout_height="39dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView36"
+        app:layout_constraintTop_toTopOf="@+id/imageView33"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/main_home_qiandao"
+        tools:layout_editor_absoluteX="-1dp" />
+
+    <ImageView
+        android:id="@+id/imageView33"
+        android:layout_width="78dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView39"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.986"
+        app:layout_constraintStart_toEndOf="@+id/textView39"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.625"
+        app:srcCompat="@drawable/main_home_huiyuan" />
+
+    <TextView
+        android:id="@+id/main_home_search"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:background="@drawable/main_home_searchbtn"
+        android:stateListAnimator="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar6"
+        app:layout_constraintEnd_toEndOf="@+id/imageView33"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="@+id/imageView27"
+        app:layout_constraintTop_toBottomOf="@+id/textView39"
+        app:layout_constraintVertical_bias="0.687" />
+
+    <ImageView
+        android:id="@+id/imageView35"
+        android:layout_width="21dp"
+        android:layout_height="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/main_home_search"
+        app:layout_constraintEnd_toEndOf="@+id/main_home_search"
+        app:layout_constraintHorizontal_bias="0.022"
+        app:layout_constraintStart_toStartOf="@+id/main_home_search"
+        app:layout_constraintTop_toTopOf="@+id/main_home_search"
+        app:srcCompat="@drawable/main_home_saoyisao" />
+
+    <TextView
+        android:id="@+id/textView45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="蒙牛冰川杯"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView35"
+        app:layout_constraintEnd_toEndOf="@+id/main_home_search"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView35"
+        app:layout_constraintTop_toTopOf="@+id/imageView35"
+        app:layout_constraintVertical_bias="0.833" />
+
+    <ImageView
+        android:id="@+id/imageView36"
+        android:layout_width="64dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="3dp"
+        app:layout_constraintBottom_toBottomOf="@+id/main_home_search"
+        app:layout_constraintEnd_toEndOf="@+id/main_home_search"
+        app:layout_constraintTop_toTopOf="@+id/main_home_search"
+        app:layout_constraintVertical_bias="0.571"
+        app:srcCompat="@drawable/main_home_sousuo" />
+
+    <ImageView
+        android:id="@+id/imageView37"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        app:layout_constraintBottom_toBottomOf="@+id/main_home_search"
+        app:layout_constraintEnd_toStartOf="@+id/imageView36"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView45"
+        app:layout_constraintTop_toTopOf="@+id/main_home_search"
+        app:srcCompat="@drawable/main_home_photo" />
+
+    <include
+        layout="@layout/layout_home_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar6" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
