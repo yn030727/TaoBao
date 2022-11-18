@@ -55,10 +55,10 @@
         android:layout_width="78dp"
         android:layout_height="39dp"
         app:layout_constraintBottom_toTopOf="@+id/imageView36"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView33"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/main_home_qiandao"
-        tools:layout_editor_absoluteX="-1dp" />
+        app:srcCompat="@drawable/main_home_qiandao" />
 
     <ImageView
         android:id="@+id/imageView33"

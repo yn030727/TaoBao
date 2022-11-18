@@ -15,14 +15,27 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:overScrollMode="never">
-        <include
-            layout="@layout/layout_home_recyclerview"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="180dp"
-            android:layout_marginLeft="6dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="6dp"/>
+            android:layout_height="match_parent"
+            android:background="#f7f7f7"
+            android:orientation="vertical">
 
+            <include
+                layout="@layout/layout_home_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="6dp"/>
+            <include
+                layout="@layout/layout_home_cardview"
+                android:layout_width="match_parent"
+                android:layout_height="205dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="6dp"/>
+        </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 
 
