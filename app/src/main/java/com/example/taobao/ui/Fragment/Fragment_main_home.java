@@ -12,8 +12,10 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.taobao.R;
+import com.example.taobao.logic.Home_commodity;
 import com.example.taobao.logic.main_taobao_function;
 import com.example.taobao.ui.Home.HomeAdapter;
+import com.example.taobao.ui.Home.HomeCommodityAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,12 +24,17 @@ public class Fragment_main_home extends Fragment {
     private RecyclerView recyclerView;
     private List<main_taobao_function> functionList;
     private HomeAdapter homeAdapter;
+    private RecyclerView recyclerView2;
+    private List<Home_commodity> homeCommodities;
+    private HomeCommodityAdapter homeCommodityAdapter;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view= inflater.inflate(R.layout.fragment_main_home,container,false);
         //获取实例
         recyclerView=view.findViewById(R.id.main_home_recyclerview);
+        recyclerView2=view.findViewById(R.id.main_home_commodity_recyclerview);
+        homeCommodities=new ArrayList<>();
         functionList=new ArrayList<>();
         initHome();
         GridLayoutManager layoutManager=new GridLayoutManager(view.getContext(),2);
@@ -35,6 +42,13 @@ public class Fragment_main_home extends Fragment {
         homeAdapter=new HomeAdapter(functionList);
         recyclerView.setAdapter(homeAdapter);
         recyclerView.setLayoutManager(layoutManager);
+        //商品
+        initCommodity();
+        GridLayoutManager layoutManager1=new GridLayoutManager(view.getContext(),2);
+        layoutManager1.setOrientation(RecyclerView.VERTICAL);
+        homeCommodityAdapter=new HomeCommodityAdapter(homeCommodities);
+        recyclerView2.setLayoutManager(layoutManager1);
+        recyclerView2.setAdapter(homeCommodityAdapter);
         return view;
     }
     public void initHome(){
@@ -59,5 +73,20 @@ public class Fragment_main_home extends Fragment {
         functionList.add(new main_taobao_function(R.drawable.main_home_19, "资质规则"));
         functionList.add(new main_taobao_function(R.drawable.main_home_20, "更多频道"));
 
+    }
+    public void initCommodity(){
+        for(int i=0;i<5;i++){
+            homeCommodities.add(new Home_commodity(R.drawable.main_home_commodity1, "锁喉脆桃小黄桃水蜜桃","9.9"));
+            homeCommodities.add(new Home_commodity(R.drawable.main_home_commodity2, "剥皮芒果软糖扒皮芒果","6.9"));
+            homeCommodities.add(new Home_commodity(R.drawable.main_home_commodity3, "【长高高，不自卑】火山","56.2"));
+            homeCommodities.add(new Home_commodity(R.drawable.main_home_commodity4, "佳达托肥椰果肉果冻布","5.9"));
+            homeCommodities.add(new Home_commodity(R.drawable.main_home_commodity5, "冻干冰糖葫芦独立包装","15.9"));
+            homeCommodities.add(new Home_commodity(R.drawable.main_home_commodity6, "原神游戏周边武器雷神","17.48"));
+            homeCommodities.add(new Home_commodity(R.drawable.main_home_commodity7, "BALENCIAGA巴黎世家","3,000"));
+            homeCommodities.add(new Home_commodity(R.drawable.main_home_commodity8, "绿头鱼头套无味可爱鱼","34.9"));
+            homeCommodities.add(new Home_commodity(R.drawable.main_home_commodity9, "我的迷你世界武器装备","13.31"));
+            homeCommodities.add(new Home_commodity(R.drawable.main_home_commodity10, "微疵特价满水有盖 可口","45"));
+            homeCommodities.add(new Home_commodity(R.drawable.main_home_commodity11, "高浓缩，更有效，眼睛累来两片","39.9"));
+        }
     }
 }

@@ -19,6 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="#f7f7f7"
+            android:layout_marginBottom="165dp"
             android:orientation="vertical">
 
             <include
@@ -35,6 +36,18 @@
                 android:layout_marginLeft="6dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="6dp"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/main_home_commodity_recyclerview"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nestedScrollView"
+                android:overScrollMode="never"
+                app:layout_constraintVertical_bias="0.0" />
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 

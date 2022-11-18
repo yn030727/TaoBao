@@ -1,6 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="210dp"
+    android:layout_height="wrap_content"
+    android:background="#f7f7f7"
+    android:maxHeight="290dp"
+    android:minHeight="242dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:maxHeight="275dp"
+        android:minHeight="235dp"
+        android:background="@drawable/taobao_layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/main_home_commodity_image"
+            android:layout_width="200dp"
+            android:layout_height="185dp"
+            android:maxHeight="200dp"
+            android:minHeight="170dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.055" />
+
+        <TextView
+            android:id="@+id/main_home_commodity_name"
+            android:layout_width="189dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="start|center"
+            android:textColor="#000"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/main_home_commodity_image"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/main_home_commodity_image"
+            app:layout_constraintVertical_bias="0.0"
+            tools:text="限量版钛合金EDC多功能" />
+
+        <TextView
+            android:id="@+id/textView47"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:text="￥"
+            android:textColor="#ff7400"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/main_home_commodity_name"
+            app:layout_constraintTop_toBottomOf="@+id/main_home_commodity_name"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/main_home_commodity_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff7400"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/textView47"
+            app:layout_constraintStart_toEndOf="@+id/textView47"
+            app:layout_constraintTop_toTopOf="@+id/textView47"
+            tools:text="5.9" />
+
+        <TextView
+            android:id="@+id/textView49"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100+ 人付款"
+            android:textSize="11dp"
+            app:layout_constraintBottom_toBottomOf="@+id/main_home_commodity_price"
+            app:layout_constraintStart_toEndOf="@+id/main_home_commodity_price"
+            app:layout_constraintTop_toTopOf="@+id/main_home_commodity_price" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="10dp"
+            android:layout_marginStart="40dp"
+            android:src="@drawable/main_home_menu"
+            app:layout_constraintBottom_toBottomOf="@+id/textView47"
+            app:layout_constraintEnd_toEndOf="@+id/main_home_commodity_name"
+            app:layout_constraintHorizontal_bias="0.771"
+            app:layout_constraintStart_toEndOf="@+id/textView49"
+            app:layout_constraintTop_toTopOf="@+id/textView47"
+            app:layout_constraintVertical_bias="0.333" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
