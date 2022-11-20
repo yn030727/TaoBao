@@ -1,5 +1,6 @@
 package com.example.taobao.ui.Fragment;
 
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -103,6 +104,14 @@ public class Fragment_main_around extends Fragment {
                 }
             }
         });
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            tabLayout.setOnScrollChangeListener(new View.OnScrollChangeListener() {
+                @Override
+                public void onScrollChange(View v, int scrollX, int scrollY, int oldScrollX, int oldScrollY) {
+                    tabLayout2.setScrollPosition(scrollX,0,true);
+                }
+            });
+        }
 
         return view;
     }
