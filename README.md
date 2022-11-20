@@ -20,7 +20,8 @@
 ## 购物车
 - 购物车界面是一个简单的RecyclerView
 - 问题:还没有处理radioButton选中的问题  
-- 优化:还可以改进选中该radioButton
+- 优化:还可以改进选中该radioButton  
+  
 ![img.png](open_image/shopping_cart1.png)
 ## 消息  
 ![img.png](open_image/message1.png)
